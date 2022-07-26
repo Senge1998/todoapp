@@ -4,10 +4,10 @@ echo "starting docker deployment"
 
 docker build -t todoapp .
 
-docker tag todoapp brymopaul/todoapp
+docker tag todoapp brymopaul/todoapi
 
-docker push brymopaul/todoapp
+docker push brymopaul/todoapi
 
 echo "finished docker deployment and deploying to kubernetes"
 
-kubectl apply -f deployment/*
+#kubectl apply -f deployment/*
