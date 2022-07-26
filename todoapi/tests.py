@@ -13,16 +13,16 @@ from rest_framework.test import APITestCase
 from .serializers import TodoSerializer
 from .models import Todo
 
-# class CreateTestCase(APITestCase):
+class CreateTestCase(APITestCase):
 
-#     def test_create(self):
-#         data = {
-#             "task_name": "test task",
-#             "completed": "true"
-#         }
+    def test_create(self):
+        data = {
+            "task_name": "test task",
+            "completed": "true"
+        }
 
-#         response = self.client.post("/api/task-create/", data)
-#         self.assertEqual(response.status_code, status.HTTP_200_OK)
+        response = self.client.post("/api/task-create/", data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
 class ListToDo(APITestCase):
 

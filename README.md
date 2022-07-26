@@ -26,3 +26,5 @@ The application has been containerized and a server.sh script has been written f
 To run the deployment, 
 
 RUN sh server.sh to execute the script which runs the deployment
+
+Automated tests were also added to test validity of the endpoints. To run the tests, a script has been written to run this which is sh test.sh.
